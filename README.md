@@ -1,0 +1,11 @@
+
+  # Create pasted design (Copy)
+
+  This is a code bundle for Create pasted design (Copy). The original project is available at https://www.figma.com/design/m76UwGTmUTInrmGJRHDmEv/Create-pasted-design--Copy-.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  

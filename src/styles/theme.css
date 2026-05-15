@@ -1,0 +1,137 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+
+  /* Premium Light Theme Colors */
+  --pure-white: #FFFFFF;
+  --warm-white: #F8F7F4;
+  --deep-navy: #0B2545;
+  --bronze-gold: #B8860B;
+  --maritime-teal: #13505B;
+  --charcoal-text: #1A1A1A;
+  --mid-gray: #6B7280;
+  --light-border: #E5E5E5;
+  --dark-footer: #0F1419;
+
+  /* CSS Variable Mappings */
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A1A;
+  --primary: #0B2545;
+  --primary-foreground: #FFFFFF;
+  --secondary: #B8860B;
+  --secondary-foreground: #FFFFFF;
+  --muted: #F8F7F4;
+  --muted-foreground: #6B7280;
+  --accent: #13505B;
+  --accent-foreground: #FFFFFF;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: #E5E5E5;
+  --input: #F8F7F4;
+  --input-background: #FFFFFF;
+  --switch-background: #E5E5E5;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #0B2545;
+  --radius: 0.125rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-pure-white: var(--pure-white);
+  --color-warm-white: var(--warm-white);
+  --color-deep-navy: var(--deep-navy);
+  --color-bronze-gold: var(--bronze-gold);
+  --color-maritime-teal: var(--maritime-teal);
+  --color-charcoal-text: var(--charcoal-text);
+  --color-mid-gray: var(--mid-gray);
+  --color-light-border: var(--light-border);
+  --color-dark-footer: var(--dark-footer);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
