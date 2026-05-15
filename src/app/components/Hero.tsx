@@ -28,7 +28,7 @@ export function Hero() {
         transition={{ duration: 12, ease: 'easeOut' }}
       >
         <source
-          src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-cargo-ship-in-the-sea-23588-large.mp4"
+          src="https://youtu.be/wQMx7wc4jh8?si=PYZkQyrhcRY4LD5-"
           type="video/mp4"
         />
       </motion.video>
