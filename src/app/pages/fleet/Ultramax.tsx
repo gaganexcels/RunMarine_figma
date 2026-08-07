@@ -15,8 +15,8 @@ const specifications = [
 const capabilities = [
   {
     icon: Ship,
-    title: 'Next-Gen Handymax',
-    description: 'Evolved design featuring enhanced fuel efficiency and cargo capacity while maintaining the flexibility that defines the Handymax segment.',
+    title: 'Next-Gen Eco-Bulker',
+    description: 'Evolved design featuring enhanced fuel efficiency and cargo capacity while maintaining the flexibility that defines this vessel class.',
   },
   {
     icon: Globe,
@@ -51,7 +51,7 @@ const galleryImages = [
 ];
 
 const relatedVessels = [
-  { name: 'Handymax', slug: 'handymax', dwt: '40,000 - 60,000 DWT' },
+  { name: 'Bulk Carrier', slug: 'bulk-carrier', dwt: '30,000 - 200,000+ DWT' },
   { name: 'Panamax', slug: 'panamax', dwt: '60,000 - 80,000 DWT' },
   { name: 'Kamsarmax', slug: 'kamsarmax', dwt: '82,000 - 87,000 DWT' },
 ];

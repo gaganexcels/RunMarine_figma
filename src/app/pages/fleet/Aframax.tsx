@@ -4,65 +4,65 @@ import { PageHero } from '../../components/PageHero';
 import { Anchor, Gauge, Ship, Globe, ArrowRight } from 'lucide-react';
 
 const specifications = [
-  { label: 'Deadweight Tonnage', value: '40,000 - 60,000 DWT' },
-  { label: 'Length Overall', value: '180 - 200 meters' },
-  { label: 'Beam', value: '28 - 32 meters' },
-  { label: 'Draft', value: '10 - 12 meters' },
-  { label: 'Cargo Hold Capacity', value: '55,000 - 70,000 m³' },
+  { label: 'Deadweight Tonnage', value: '80,000 - 120,000 DWT' },
+  { label: 'Length Overall', value: '220 - 245 meters' },
+  { label: 'Beam', value: '40 - 44 meters' },
+  { label: 'Draft', value: '14 - 15.5 meters' },
+  { label: 'Cargo Hold Capacity', value: '90,000 - 130,000 m³' },
   { label: 'Speed (Service)', value: '14 - 15 knots' },
 ];
 
 const capabilities = [
   {
     icon: Ship,
-    title: 'Port Flexibility',
-    description: 'Designed to access a wide range of ports worldwide, including smaller regional terminals that larger vessels cannot reach.',
+    title: 'Crude & Product Transport',
+    description: 'Designed with specialized internal tank coatings, cargo heating, and inert gas systems to carry crude oil and refined petroleum products safely.',
   },
   {
     icon: Globe,
-    title: 'Regional Trade Excellence',
-    description: 'Ideal for short to medium-haul routes, connecting regional markets with exceptional efficiency.',
+    title: 'Basin Trade Specialist',
+    description: 'Highly active in medium-range regions and major shipping basins, including the Mediterranean, Caribbean, Baltic Sea, and South East Asia.',
   },
   {
     icon: Gauge,
-    title: 'Versatile Cargo Handling',
-    description: 'Equipped with onboard cranes and gear systems, enabling operations in ports with limited infrastructure.',
+    title: 'Optimal Tanker Size',
+    description: 'Widely considered the ultimate tanker size class, combining massive carrying capacity with the dimensional access required for most harbors.',
   },
   {
     icon: Anchor,
-    title: 'Multi-Purpose Operations',
-    description: 'Capable of transporting grain, coal, steel, and project cargo with equal proficiency.',
+    title: 'Eco-Guard Shielding',
+    description: 'Reinforced double-hull design paired with state-of-the-art vapor emission control systems to minimize environmental impact.',
   },
 ];
 
 const galleryImages = [
   {
-    url: 'https://images.unsplash.com/photo-1742576437150-3a79cae681f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Handymax vessel at port',
+    url: 'https://images.unsplash.com/photo-1544816155-12df9643f363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Aframax tanker during open sea passage',
   },
   {
-    url: 'https://images.unsplash.com/photo-1742576306882-e6b2588c4528?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Loading operations',
+    url: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Operations at offshore marine terminal',
   },
   {
-    url: 'https://images.unsplash.com/photo-1693021300750-c042a492248b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Ocean transit',
+    url: 'https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Safe navigation in restricted waterways',
   },
 ];
 
 const relatedVessels = [
-  { name: 'Ultramax', slug: 'ultramax', dwt: '60,000 - 65,000 DWT' },
+  { name: 'Suezmax', slug: 'suezmax', dwt: '120,000 - 160,000 DWT' },
+  { name: 'MR Tanker', slug: 'mr-tanker', dwt: '40,000 - 55,000 DWT' },
   { name: 'Panamax', slug: 'panamax', dwt: '60,000 - 80,000 DWT' },
-  { name: 'Mini Bulker', slug: 'mini-bulker', dwt: '10,000 - 40,000 DWT' },
 ];
 
-export function Handymax() {
+export function Aframax() {
   return (
     <div className="min-h-screen bg-[#F8F7F4]">
       <PageHero
-        title="Handymax"
-        subtitle="Agility meets capability. Engineered for flexible operations across diverse global ports."
-        imageUrl="https://images.unsplash.com/photo-1758900348926-cd1ccbc15fef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+        title="Aframax"
+        subtitle="The standard of liquid cargo efficiency. Advanced double-hull tanker engineered for premium security, regional basin trade, and global crude markets."
+        imageUrl="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
         height="large"
       />
 
@@ -80,12 +80,13 @@ export function Handymax() {
               className="text-4xl md:text-5xl font-bold text-[#0B2545] mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              The Versatile Workhorse
+              The Liquid Logistics Standard
             </h2>
             <p className="text-lg text-[#6B7280] leading-relaxed">
-              Handymax vessels represent the perfect balance between size and flexibility. With their moderate
-              dimensions and self-sustaining cargo handling equipment, these vessels excel in regional trade
-              routes and ports where larger vessels cannot operate efficiently.
+              Our Aframax tankers represent a critical link in the global energy supply chain. Engineered to transport 
+              heavy crude oil and refined petroleum products, these highly stable, double-hull vessels operate with 
+              unparalleled precision in regional trade channels and localized basins, connecting primary production points 
+              to major refining terminals.
             </p>
           </motion.div>
 
@@ -171,26 +172,25 @@ export function Handymax() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Premium Management Standards
+              Unyielding Marine Environmental Safety
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
-              Our Handymax vessels are maintained to the highest industry standards. With experienced crews,
-              rigorous maintenance protocols, and advanced monitoring systems, we ensure optimal performance
-              and reliability on every voyage. Our commitment to excellence means your cargo arrives safely,
-              on time, every time.
+              Operating crude and product tankers requires rigid adherence to the most extreme international maritime safety 
+              regulations. Our Aframax fleet maintains zero-tolerance oil discharge policies, utilizing automatic tank 
+              cleaning machinery, dual radar level sensing, and continuous hull inspection regimes to protect the marine ecosystem.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-12">
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">99.8%</div>
-                <div className="text-white/80">On-Time Delivery</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">SIRE 2.0</div>
+                <div className="text-white/80">Compliance Certified</div>
               </div>
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">24/7</div>
-                <div className="text-white/80">Fleet Monitoring</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">100%</div>
+                <div className="text-white/80">Double-Hull Integrity</div>
               </div>
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">ISO</div>
-                <div className="text-white/80">Certified Operations</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">Zero</div>
+                <div className="text-white/80">Spill / Ecological Incidents</div>
               </div>
             </div>
           </motion.div>
@@ -293,11 +293,11 @@ export function Handymax() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Charter a Handymax Vessel
+              Charter an Aframax Tanker
             </h2>
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Experience the flexibility and reliability of our Handymax fleet.
-              Contact us to discuss your shipping requirements.
+              Secure highly efficient liquid commodity shipping. Reach out to our specialized energy cargo division
+              to structure your chartering contract.
             </p>
             <Link
               to="/contact"

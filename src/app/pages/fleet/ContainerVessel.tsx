@@ -4,65 +4,65 @@ import { PageHero } from '../../components/PageHero';
 import { Anchor, Gauge, Ship, Globe, ArrowRight } from 'lucide-react';
 
 const specifications = [
-  { label: 'Deadweight Tonnage', value: '150,000 - 400,000 DWT' },
-  { label: 'Length Overall', value: '280 - 360 meters' },
-  { label: 'Beam', value: '45 - 63 meters' },
-  { label: 'Draft', value: '18 - 23 meters' },
-  { label: 'Cargo Hold Capacity', value: '190,000 - 220,000 m³' },
-  { label: 'Speed (Service)', value: '14 - 16 knots' },
+  { label: 'Deadweight Tonnage', value: '30,000 - 150,000+ DWT' },
+  { label: 'Length Overall', value: '200 - 366 meters' },
+  { label: 'Beam', value: '32 - 48 meters' },
+  { label: 'Draft', value: '11 - 16 meters' },
+  { label: 'TEU Carrying Capacity', value: '3,000 - 15,000+ TEU' },
+  { label: 'Speed (Service)', value: '18 - 22 knots' },
 ];
 
 const capabilities = [
   {
     icon: Ship,
-    title: 'Ultra-Large Capacity',
-    description: 'The largest dry bulk carriers in operation, designed for maximum cargo volume on major trade routes between continents.',
+    title: 'High TEU Capacity',
+    description: 'Engineered with precision internal cell guides and reinforced multi-tier deck lashing structures to secure thousands of standardized 20ft and 40ft containers.',
   },
   {
     icon: Globe,
-    title: 'Iron Ore & Coal Specialists',
-    description: 'Optimized for transporting massive quantities of iron ore, coal, and other raw materials across oceanic distances.',
+    title: 'Strict Liner Schedules',
+    description: 'Propelled by high-power low-speed main engines designed for faster service speeds, ensuring strict compliance with tight port loading windows.',
   },
   {
     icon: Gauge,
-    title: 'Economy of Scale',
-    description: 'Unmatched cost-efficiency per ton-mile makes Capesize vessels the preferred choice for long-haul bulk commodity transport.',
+    title: 'Active Reefer Support',
+    description: 'Equipped with vast, integrated auxiliary power grids to monitor and supply stable electrical currents to hundreds of active refrigerated container units.',
   },
   {
     icon: Anchor,
-    title: 'Deep-Water Operations',
-    description: 'Designed for major deep-water ports and terminals with specialized loading and discharge infrastructure.',
+    title: 'Anti-Roll cargo Protection',
+    description: 'Fitted with advanced hydro-stabilizer fins and computer-monitored ballast adjustment tanks to prevent cargo shifting during extreme sea conditions.',
   },
 ];
 
 const galleryImages = [
   {
-    url: 'https://images.unsplash.com/photo-1751970046974-6d5a27f23ce1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Capesize vessel at sea',
+    url: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Container Vessel docked during high-speed port logistics',
   },
   {
-    url: 'https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Aerial view',
+    url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Standardized container storage modules at marine terminal',
   },
   {
-    url: 'https://images.unsplash.com/photo-1585713181935-d5f622cc2415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Ocean transit',
+    url: 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Full-load transit across transpacific trade corridor',
   },
 ];
 
 const relatedVessels = [
-  { name: 'Suezmax', slug: 'suezmax', dwt: '120,000 - 160,000 DWT' },
+  { name: 'Bulk Carrier', slug: 'bulk-carrier', dwt: '30,000 - 200,000+ DWT' },
   { name: 'Post-Panamax', slug: 'post-panamax', dwt: '90,000 - 110,000 DWT' },
-  { name: 'Kamsarmax', slug: 'kamsarmax', dwt: '82,000 - 87,000 DWT' },
+  { name: 'Suezmax', slug: 'suezmax', dwt: '120,000 - 160,000 DWT' },
 ];
 
-export function Capesize() {
+export function ContainerVessel() {
   return (
     <div className="min-h-screen bg-[#F8F7F4]">
       <PageHero
-        title="Capesize"
-        subtitle="The titans of the ocean. Engineered for maximum cargo capacity and efficiency on major global trade routes."
-        imageUrl="https://images.unsplash.com/photo-1751970046974-6d5a27f23ce1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+        title="Container Vessel"
+        subtitle="The pulse of international consumer trade. High-capacity liner engineered for speed, massive container payloads, and reliable global schedules."
+        imageUrl="https://images.unsplash.com/photo-1578575437130-527eed3abbec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
         height="large"
       />
 
@@ -80,13 +80,12 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-[#0B2545] mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Maritime Giants
+              Connecting Global Supply Chains
             </h2>
             <p className="text-lg text-[#6B7280] leading-relaxed">
-              Capesize vessels represent the pinnacle of dry bulk carrier engineering. Too large to transit
-              the Panama or Suez Canals, these massive ships navigate around the Cape of Good Hope and Cape Horn,
-              delivering unprecedented cargo capacity for iron ore, coal, and other bulk commodities. Their
-              sheer scale enables the most economical transport of raw materials across global trade routes.
+              Our Container Vessels power international global trade, carrying thousands of product container units (TEU) 
+              across key intercontinental sea lanes. Optimized for rapid cruising speeds, efficient terminal loading cycles, and 
+              safe refrigerated cargo transit, these modern vessels secure absolute consistency for just-in-time supply chains.
             </p>
           </motion.div>
 
@@ -172,26 +171,25 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Elite Fleet Management
+              Elite Liner Service Integrity
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
-              Operating Capesize vessels demands the highest level of expertise and precision. Our fleet is
-              managed by master mariners with decades of experience navigating the world's most challenging
-              trade routes. Advanced weather routing, comprehensive safety protocols, and continuous
-              performance optimization ensure every voyage meets our exacting standards of excellence.
+              Liner shipping operates under extreme schedule pressure. Our container management systems integrate advanced weather 
+              routing, engine performance analytics, and pre-planned port berth coordination to maintain unmatched schedule reliability. 
+              With dedicated reefer technicians monitoring chilled cargos around the clock, safety and quality remain absolute.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-12">
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">400K+</div>
-                <div className="text-white/80">Max DWT Capacity</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">99.4%</div>
+                <div className="text-white/80">Schedule Reliability Index</div>
               </div>
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">100%</div>
-                <div className="text-white/80">Safety Record</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">1,000+</div>
+                <div className="text-white/80">Active Reefer Points</div>
               </div>
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">Global</div>
-                <div className="text-white/80">Trade Routes</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">Zero</div>
+                <div className="text-white/80">Lost Containers at Sea</div>
               </div>
             </div>
           </motion.div>
@@ -294,11 +292,11 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Charter a Capesize Vessel
+              Charter a Container Vessel
             </h2>
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Unlock the power of our Capesize fleet for your large-scale bulk cargo needs.
-              Contact us to explore charter opportunities.
+              Secure consistent container capacity for your global liner operations. 
+              Contact our trade coordinators today to schedule your shipping logistics.
             </p>
             <Link
               to="/contact"

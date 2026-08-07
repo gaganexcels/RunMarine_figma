@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router';
-import { ArrowUp, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { ArrowUp, Mail, Phone, MapPin, Linkedin, Instagram, MessageCircle } from 'lucide-react';
 
 export function Footer() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -35,10 +35,10 @@ export function Footer() {
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={20} />, href: '#', label: 'Facebook' },
-    { icon: <Twitter size={20} />, href: '#', label: 'Twitter' },
-    { icon: <Linkedin size={20} />, href: '#', label: 'LinkedIn' },
-    { icon: <Instagram size={20} />, href: '#', label: 'Instagram' },
+    { icon: <Linkedin size={20} />, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: <Instagram size={20} />, href: 'https://instagram.com', label: 'Instagram' },
+    { icon: <Mail size={20} />, href: 'mailto:operations@runmarine.in', label: 'Email' },
+    { icon: <MessageCircle size={20} />, href: 'https://wa.me/919958216002', label: 'WhatsApp' },
   ];
 
   return (
@@ -108,15 +108,21 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-400">
                 <MapPin size={20} className="text-[#B8860B] flex-shrink-0 mt-1" />
-                <span>Mumbai, Maharashtra, India</span>
+                <span>Office Number 304, Plot 22 - 26, Sector 24, Krishna Govind Tower, Vashi, Navi Mumbai</span>
               </li>
-              <li className="flex items-center gap-3 text-gray-400 hover:text-white cursor-pointer">
-                <Mail size={20} className="text-[#B8860B] flex-shrink-0" />
-                <span>contact@runmarine.in</span>
+              <li className="flex items-start gap-3 text-gray-400">
+                <Mail size={20} className="text-[#B8860B] flex-shrink-0 mt-1" />
+                <div className="flex flex-col gap-1">
+                  <a href="mailto:crewing@runmarine.in" className="hover:text-white transition-colors">crewing@runmarine.in</a>
+                  <a href="mailto:operations@runmarine.in" className="hover:text-white transition-colors">operations@runmarine.in</a>
+                </div>
               </li>
-              <li className="flex items-center gap-3 text-gray-400 hover:text-white cursor-pointer">
-                <Phone size={20} className="text-[#B8860B] flex-shrink-0" />
-                <span>+91 22 1234 5678</span>
+              <li className="flex items-start gap-3 text-gray-400">
+                <Phone size={20} className="text-[#B8860B] flex-shrink-0 mt-1" />
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+919958216002" className="hover:text-white transition-colors">+91 99582 16002</a>
+                  <a href="tel:+918080343416" className="hover:text-white transition-colors">+91 80803 43416</a>
+                </div>
               </li>
             </ul>
           </div>

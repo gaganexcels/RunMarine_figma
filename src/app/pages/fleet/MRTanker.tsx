@@ -4,65 +4,65 @@ import { PageHero } from '../../components/PageHero';
 import { Anchor, Gauge, Ship, Globe, ArrowRight } from 'lucide-react';
 
 const specifications = [
-  { label: 'Deadweight Tonnage', value: '150,000 - 400,000 DWT' },
-  { label: 'Length Overall', value: '280 - 360 meters' },
-  { label: 'Beam', value: '45 - 63 meters' },
-  { label: 'Draft', value: '18 - 23 meters' },
-  { label: 'Cargo Hold Capacity', value: '190,000 - 220,000 m³' },
-  { label: 'Speed (Service)', value: '14 - 16 knots' },
+  { label: 'Deadweight Tonnage', value: '40,000 - 55,000 DWT' },
+  { label: 'Length Overall', value: '175 - 190 meters' },
+  { label: 'Beam', value: '32.2 meters (max)' },
+  { label: 'Draft', value: '11 - 13 meters' },
+  { label: 'Cargo Hold Capacity', value: '50,000 - 65,000 m³' },
+  { label: 'Speed (Service)', value: '13.5 - 14.5 knots' },
 ];
 
 const capabilities = [
   {
     icon: Ship,
-    title: 'Ultra-Large Capacity',
-    description: 'The largest dry bulk carriers in operation, designed for maximum cargo volume on major trade routes between continents.',
+    title: 'Product Versatility',
+    description: 'Outfitted with specialized cargo tank coatings (such as phenolic epoxy) enabling safe transport of clean petroleum products, chemicals, and vegetable oils.',
   },
   {
     icon: Globe,
-    title: 'Iron Ore & Coal Specialists',
-    description: 'Optimized for transporting massive quantities of iron ore, coal, and other raw materials across oceanic distances.',
+    title: 'Shallow-Draft Access',
+    description: 'Optimized draft and beam parameters enable seamless entry to regional channels and compact domestic ports unavailable to deep-sea tankers.',
   },
   {
     icon: Gauge,
-    title: 'Economy of Scale',
-    description: 'Unmatched cost-efficiency per ton-mile makes Capesize vessels the preferred choice for long-haul bulk commodity transport.',
+    title: 'Individual Deepwell Pumps',
+    description: 'Equipped with dedicated, self-contained deepwell cargo pumps in each tank, allowing simultaneous discharge of different liquid grades with absolute purity.',
   },
   {
     icon: Anchor,
-    title: 'Deep-Water Operations',
-    description: 'Designed for major deep-water ports and terminals with specialized loading and discharge infrastructure.',
+    title: 'IMO Chemical Compliant',
+    description: 'Fully double-hulled and compliant with high-tier IMO Class II and III chemical transportation safety regulations.',
   },
 ];
 
 const galleryImages = [
   {
-    url: 'https://images.unsplash.com/photo-1751970046974-6d5a27f23ce1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Capesize vessel at sea',
+    url: 'https://images.unsplash.com/photo-1544816155-12df9643f363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'MR Tanker transporting clean product cargo',
   },
   {
-    url: 'https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Aerial view',
+    url: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Precise docking at regional chemical refinery',
   },
   {
-    url: 'https://images.unsplash.com/photo-1585713181935-d5f622cc2415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Ocean transit',
+    url: 'https://images.unsplash.com/photo-1742575881475-354a34b9df3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Advanced cargo manifolds during loading process',
   },
 ];
 
 const relatedVessels = [
+  { name: 'Aframax', slug: 'aframax', dwt: '80,000 - 120,000 DWT' },
   { name: 'Suezmax', slug: 'suezmax', dwt: '120,000 - 160,000 DWT' },
-  { name: 'Post-Panamax', slug: 'post-panamax', dwt: '90,000 - 110,000 DWT' },
-  { name: 'Kamsarmax', slug: 'kamsarmax', dwt: '82,000 - 87,000 DWT' },
+  { name: 'Panamax', slug: 'panamax', dwt: '60,000 - 80,000 DWT' },
 ];
 
-export function Capesize() {
+export function MRTanker() {
   return (
     <div className="min-h-screen bg-[#F8F7F4]">
       <PageHero
-        title="Capesize"
-        subtitle="The titans of the ocean. Engineered for maximum cargo capacity and efficiency on major global trade routes."
-        imageUrl="https://images.unsplash.com/photo-1751970046974-6d5a27f23ce1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+        title="MR Tanker"
+        subtitle="The standard in product and chemical transport. Highly versatile Medium Range tanker designed with premium epoxy coatings and individual deepwell pumps."
+        imageUrl="https://images.unsplash.com/photo-1544816155-12df9643f363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
         height="large"
       />
 
@@ -80,13 +80,12 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-[#0B2545] mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Maritime Giants
+              Ultimate Product Versatility
             </h2>
             <p className="text-lg text-[#6B7280] leading-relaxed">
-              Capesize vessels represent the pinnacle of dry bulk carrier engineering. Too large to transit
-              the Panama or Suez Canals, these massive ships navigate around the Cape of Good Hope and Cape Horn,
-              delivering unprecedented cargo capacity for iron ore, coal, and other bulk commodities. Their
-              sheer scale enables the most economical transport of raw materials across global trade routes.
+              Our MR (Medium Range) Tankers provide superior versatility for refined products, specialty chemicals, 
+              and biological oil logistics. Outfitted with high-quality tank coatings and completely separate cargo pump lines, 
+              these agile double-hull vessels easily transition between diverse chemical and fuel grades, guaranteeing maximum asset utilization.
             </p>
           </motion.div>
 
@@ -172,26 +171,25 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Elite Fleet Management
+              Impeccable Purity Controls
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
-              Operating Capesize vessels demands the highest level of expertise and precision. Our fleet is
-              managed by master mariners with decades of experience navigating the world's most challenging
-              trade routes. Advanced weather routing, comprehensive safety protocols, and continuous
-              performance optimization ensure every voyage meets our exacting standards of excellence.
+              Preventing cargo contamination is our highest priority. Our MR Tanker operations employ comprehensive tank-wash checks, 
+              automatic nitrogen blanketing, and laboratory-tested chemical cleanings between voyages. We guarantee absolute cargo 
+              purity from pipeline to pipeline, achieving elite status among major oil majors and global chemical traders.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-12">
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">400K+</div>
-                <div className="text-white/80">Max DWT Capacity</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">Framo</div>
+                <div className="text-white/80">Hydraulic Pump Systems</div>
               </div>
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">100%</div>
-                <div className="text-white/80">Safety Record</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">12+</div>
+                <div className="text-white/80">Separate Cargo Grades</div>
               </div>
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">Global</div>
-                <div className="text-white/80">Trade Routes</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">Zero</div>
+                <div className="text-white/80">Cargo Cross-Contaminations</div>
               </div>
             </div>
           </motion.div>
@@ -294,11 +292,11 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Charter a Capesize Vessel
+              Charter an MR Tanker
             </h2>
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Unlock the power of our Capesize fleet for your large-scale bulk cargo needs.
-              Contact us to explore charter opportunities.
+              Experience immaculate liquid logistics. Get in touch with our operations team to secure your custom product 
+              or chemical transportation solution.
             </p>
             <Link
               to="/contact"

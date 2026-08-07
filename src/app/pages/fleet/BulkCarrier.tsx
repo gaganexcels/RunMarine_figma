@@ -4,65 +4,65 @@ import { PageHero } from '../../components/PageHero';
 import { Anchor, Gauge, Ship, Globe, ArrowRight } from 'lucide-react';
 
 const specifications = [
-  { label: 'Deadweight Tonnage', value: '150,000 - 400,000 DWT' },
-  { label: 'Length Overall', value: '280 - 360 meters' },
-  { label: 'Beam', value: '45 - 63 meters' },
-  { label: 'Draft', value: '18 - 23 meters' },
-  { label: 'Cargo Hold Capacity', value: '190,000 - 220,000 m³' },
-  { label: 'Speed (Service)', value: '14 - 16 knots' },
+  { label: 'Deadweight Tonnage', value: '30,000 - 200,000+ DWT' },
+  { label: 'Length Overall', value: '180 - 300 meters' },
+  { label: 'Beam', value: '30 - 50 meters' },
+  { label: 'Draft', value: '10 - 18.5 meters' },
+  { label: 'Cargo Hold Capacity', value: '40,000 - 220,000 m³' },
+  { label: 'Speed (Service)', value: '13.5 - 15 knots' },
 ];
 
 const capabilities = [
   {
     icon: Ship,
-    title: 'Ultra-Large Capacity',
-    description: 'The largest dry bulk carriers in operation, designed for maximum cargo volume on major trade routes between continents.',
+    title: 'Dry Bulk Capacity',
+    description: 'Engineered to carry massive quantities of unpacked dry cargo such as iron ore, coal, grain, and cement with supreme efficiency.',
   },
   {
     icon: Globe,
-    title: 'Iron Ore & Coal Specialists',
-    description: 'Optimized for transporting massive quantities of iron ore, coal, and other raw materials across oceanic distances.',
+    title: 'Global Reach',
+    description: 'Capable of traversing major oceanic trade lanes, connecting key resource-producing regions to primary global industrial hubs.',
   },
   {
     icon: Gauge,
-    title: 'Economy of Scale',
-    description: 'Unmatched cost-efficiency per ton-mile makes Capesize vessels the preferred choice for long-haul bulk commodity transport.',
+    title: 'High Cargo Efficiency',
+    description: 'Optimized cargo hold structures and large hatch openings ensure rapid loading and discharging, reducing port stay duration.',
   },
   {
     icon: Anchor,
-    title: 'Deep-Water Operations',
-    description: 'Designed for major deep-water ports and terminals with specialized loading and discharge infrastructure.',
+    title: 'Structural Resilience',
+    description: 'Robust double-hull and high-tensile steel constructions offer superior durability under high-stress bulk operations.',
   },
 ];
 
 const galleryImages = [
   {
-    url: 'https://images.unsplash.com/photo-1751970046974-6d5a27f23ce1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Capesize vessel at sea',
+    url: 'https://images.unsplash.com/photo-1544816155-12df9643f363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Bulk Carrier at open sea',
   },
   {
-    url: 'https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Aerial view',
+    url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Loading operations at dry terminal',
   },
   {
-    url: 'https://images.unsplash.com/photo-1585713181935-d5f622cc2415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Ocean transit',
+    url: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Industrial harbor logistics',
   },
 ];
 
 const relatedVessels = [
-  { name: 'Suezmax', slug: 'suezmax', dwt: '120,000 - 160,000 DWT' },
-  { name: 'Post-Panamax', slug: 'post-panamax', dwt: '90,000 - 110,000 DWT' },
+  { name: 'Panamax', slug: 'panamax', dwt: '60,000 - 80,000 DWT' },
+  { name: 'Capesize', slug: 'capesize', dwt: '160,000 - 210,000 DWT' },
   { name: 'Kamsarmax', slug: 'kamsarmax', dwt: '82,000 - 87,000 DWT' },
 ];
 
-export function Capesize() {
+export function BulkCarrier() {
   return (
     <div className="min-h-screen bg-[#F8F7F4]">
       <PageHero
-        title="Capesize"
-        subtitle="The titans of the ocean. Engineered for maximum cargo capacity and efficiency on major global trade routes."
-        imageUrl="https://images.unsplash.com/photo-1751970046974-6d5a27f23ce1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+        title="Bulk Carrier"
+        subtitle="The backbone of global commodity trade. Massive carrying capacity designed for optimal efficiency and heavy-duty logistics."
+        imageUrl="https://images.unsplash.com/photo-1544816155-12df9643f363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
         height="large"
       />
 
@@ -80,13 +80,12 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-[#0B2545] mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Maritime Giants
+              Essential Commodity Transport
             </h2>
             <p className="text-lg text-[#6B7280] leading-relaxed">
-              Capesize vessels represent the pinnacle of dry bulk carrier engineering. Too large to transit
-              the Panama or Suez Canals, these massive ships navigate around the Cape of Good Hope and Cape Horn,
-              delivering unprecedented cargo capacity for iron ore, coal, and other bulk commodities. Their
-              sheer scale enables the most economical transport of raw materials across global trade routes.
+              Our Bulk Carrier fleet forms the absolute foundation of global maritime transport. Specially designed to
+              carry loose, high-density dry cargoes like iron ore, grain, coal, and minerals, these vessels are
+              vital to maintaining supply lines for energy, construction, and agriculture sectors worldwide.
             </p>
           </motion.div>
 
@@ -172,26 +171,26 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Elite Fleet Management
+              Unyielding Standards in Bulk Shipping
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
-              Operating Capesize vessels demands the highest level of expertise and precision. Our fleet is
-              managed by master mariners with decades of experience navigating the world's most challenging
-              trade routes. Advanced weather routing, comprehensive safety protocols, and continuous
-              performance optimization ensure every voyage meets our exacting standards of excellence.
+              We manage our bulk carrier operations with a meticulous eye for safety, cargo integrity, and environmental 
+              sustainability. Implementing modern weather-routing programs, real-time stress monitoring, and structured
+              preventative maintenance, our ships achieve maximum reliability, crossing trade lanes seamlessly and 
+              efficiently.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-12">
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">400K+</div>
-                <div className="text-white/80">Max DWT Capacity</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">99.8%</div>
+                <div className="text-white/80">On-Time Discharging</div>
               </div>
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">100%</div>
-                <div className="text-white/80">Safety Record</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">12M+ Tons</div>
+                <div className="text-white/80">Annual Cargo Transited</div>
               </div>
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">Global</div>
-                <div className="text-white/80">Trade Routes</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">Zero</div>
+                <div className="text-white/80">Loss of Cargo Incidents</div>
               </div>
             </div>
           </motion.div>
@@ -294,11 +293,11 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Charter a Capesize Vessel
+              Charter a Bulk Carrier
             </h2>
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Unlock the power of our Capesize fleet for your large-scale bulk cargo needs.
-              Contact us to explore charter opportunities.
+              Unlock streamlined logistics with our highly reliable, top-tier Bulk Carrier fleet. 
+              Let our experts coordinate your cargo movements with maximum safety.
             </p>
             <Link
               to="/contact"

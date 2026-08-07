@@ -4,65 +4,65 @@ import { PageHero } from '../../components/PageHero';
 import { Anchor, Gauge, Ship, Globe, ArrowRight } from 'lucide-react';
 
 const specifications = [
-  { label: 'Deadweight Tonnage', value: '150,000 - 400,000 DWT' },
-  { label: 'Length Overall', value: '280 - 360 meters' },
-  { label: 'Beam', value: '45 - 63 meters' },
-  { label: 'Draft', value: '18 - 23 meters' },
-  { label: 'Cargo Hold Capacity', value: '190,000 - 220,000 m³' },
-  { label: 'Speed (Service)', value: '14 - 16 knots' },
+  { label: 'Deadweight Tonnage', value: '120,000 - 160,000 DWT' },
+  { label: 'Length Overall', value: '260 - 280 meters' },
+  { label: 'Beam', value: '45 - 50 meters' },
+  { label: 'Draft', value: '16 - 17.5 meters' },
+  { label: 'Cargo Hold Capacity', value: '130,000 - 175,000 m³' },
+  { label: 'Speed (Service)', value: '14 - 15.5 knots' },
 ];
 
 const capabilities = [
   {
     icon: Ship,
-    title: 'Ultra-Large Capacity',
-    description: 'The largest dry bulk carriers in operation, designed for maximum cargo volume on major trade routes between continents.',
+    title: 'Suez Canal Optimized',
+    description: 'Dimensions engineered to transit the Suez Canal at full load drafts, avoiding cargo offloading or route extensions.',
   },
   {
     icon: Globe,
-    title: 'Iron Ore & Coal Specialists',
-    description: 'Optimized for transporting massive quantities of iron ore, coal, and other raw materials across oceanic distances.',
+    title: 'Intercontinental Corridors',
+    description: 'Vital asset for long-haul global crude transits, linking primary oil production sectors in West Africa, South America, and the Persian Gulf to international refining centers.',
   },
   {
     icon: Gauge,
-    title: 'Economy of Scale',
-    description: 'Unmatched cost-efficiency per ton-mile makes Capesize vessels the preferred choice for long-haul bulk commodity transport.',
+    title: 'Multi-Grade Segregation',
+    description: 'Sophisticated cargo tank layouts and separate pump systems allow the simultaneous carrying of multiple crude oil grades with zero risk of cross-contamination.',
   },
   {
     icon: Anchor,
-    title: 'Deep-Water Operations',
-    description: 'Designed for major deep-water ports and terminals with specialized loading and discharge infrastructure.',
+    title: 'High-Flow Discharging',
+    description: 'Equipped with rapid high-pressure centrifugal pumps, facilitating massive flow rates and reducing time spent docked at discharge terminals.',
   },
 ];
 
 const galleryImages = [
   {
-    url: 'https://images.unsplash.com/photo-1751970046974-6d5a27f23ce1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Capesize vessel at sea',
+    url: 'https://images.unsplash.com/photo-1693021300750-c042a492248b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Suezmax tanker transiting international canal corridor',
   },
   {
-    url: 'https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Aerial view',
+    url: 'https://images.unsplash.com/photo-1544816155-12df9643f363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Intercontinental crude oil delivery passage',
   },
   {
-    url: 'https://images.unsplash.com/photo-1585713181935-d5f622cc2415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Ocean transit',
+    url: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Safe cargo discharging operations at deepwater terminal',
   },
 ];
 
 const relatedVessels = [
-  { name: 'Suezmax', slug: 'suezmax', dwt: '120,000 - 160,000 DWT' },
+  { name: 'Capesize', slug: 'capesize', dwt: '160,000 - 210,000 DWT' },
+  { name: 'Aframax', slug: 'aframax', dwt: '80,000 - 120,000 DWT' },
   { name: 'Post-Panamax', slug: 'post-panamax', dwt: '90,000 - 110,000 DWT' },
-  { name: 'Kamsarmax', slug: 'kamsarmax', dwt: '82,000 - 87,000 DWT' },
 ];
 
-export function Capesize() {
+export function Suezmax() {
   return (
     <div className="min-h-screen bg-[#F8F7F4]">
       <PageHero
-        title="Capesize"
-        subtitle="The titans of the ocean. Engineered for maximum cargo capacity and efficiency on major global trade routes."
-        imageUrl="https://images.unsplash.com/photo-1751970046974-6d5a27f23ce1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+        title="Suezmax"
+        subtitle="Optimum capacity for international crude corridors. Heavy-duty liquid bulk carrier engineered to navigate critical ocean canals at full draft."
+        imageUrl="https://images.unsplash.com/photo-1693021300750-c042a492248b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
         height="large"
       />
 
@@ -80,13 +80,12 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-[#0B2545] mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Maritime Giants
+              Strategic Waterway Leadership
             </h2>
             <p className="text-lg text-[#6B7280] leading-relaxed">
-              Capesize vessels represent the pinnacle of dry bulk carrier engineering. Too large to transit
-              the Panama or Suez Canals, these massive ships navigate around the Cape of Good Hope and Cape Horn,
-              delivering unprecedented cargo capacity for iron ore, coal, and other bulk commodities. Their
-              sheer scale enables the most economical transport of raw materials across global trade routes.
+              Our Suezmax tankers represent the absolute pinnacle of strategic oil distribution logistics. Named after the 
+              historic Suez Canal, these massive liquid bulk carriers are custom-dimensioned to leverage the maximum transit capacity 
+              of this critical international waterway, connecting global continents with unparalleled speed and safety.
             </p>
           </motion.div>
 
@@ -172,26 +171,25 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Elite Fleet Management
+              Flawless Suez Transit Coordination
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
-              Operating Capesize vessels demands the highest level of expertise and precision. Our fleet is
-              managed by master mariners with decades of experience navigating the world's most challenging
-              trade routes. Advanced weather routing, comprehensive safety protocols, and continuous
-              performance optimization ensure every voyage meets our exacting standards of excellence.
+              Canal passage at high drafts demands extraordinary nautical precision. Our navigation captains undergo advanced, 
+              simulation-based waterway training and work alongside local harbor pilots, guaranteeing safe, incident-free transit. 
+              With sophisticated electronic stress monitoring and active stability systems, every voyage represents the gold standard of safety.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-12">
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">400K+</div>
-                <div className="text-white/80">Max DWT Capacity</div>
-              </div>
-              <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
                 <div className="text-3xl font-bold text-[#B8860B] mb-2">100%</div>
-                <div className="text-white/80">Safety Record</div>
+                <div className="text-white/80">Canal Transit Safety Record</div>
               </div>
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">Global</div>
-                <div className="text-white/80">Trade Routes</div>
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">8,000+ m³/h</div>
+                <div className="text-white/80">Pumping Discharge Capacity</div>
+              </div>
+              <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">Zero</div>
+                <div className="text-white/80">Operational Voyage Delays</div>
               </div>
             </div>
           </motion.div>
@@ -294,11 +292,11 @@ export function Capesize() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Charter a Capesize Vessel
+              Charter a Suezmax Tanker
             </h2>
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Unlock the power of our Capesize fleet for your large-scale bulk cargo needs.
-              Contact us to explore charter opportunities.
+              Elevate your intercontinental liquid cargo shipping with our optimized Suezmax tankers. 
+              Contact our chartering team today to coordinate a premium trade solution.
             </p>
             <Link
               to="/contact"

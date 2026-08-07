@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useState } from 'react';
-import { Linkedin, Mail } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import { PageHero } from '../../components/PageHero';
 
 export function LeadershipTeam() {
@@ -8,59 +8,59 @@ export function LeadershipTeam() {
 
   const team = [
     {
-      name: 'Captain Rajesh Sharma',
-      position: 'Chief Executive Officer',
+      name: 'Nagaraj P. Somasi',
+      position: 'Managing Director',
       department: 'Executive Leadership',
-      experience: '30+ years',
+      experience: '15+ years',
       expertise: 'Maritime Operations, Strategic Planning',
       bio: 'Veteran master mariner with extensive experience in vessel operations and maritime business development.',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
     },
     {
-      name: 'Priya Menon',
-      position: 'Chief Operations Officer',
-      department: 'Operations',
-      experience: '25+ years',
-      expertise: 'Fleet Management, Technical Operations',
-      bio: 'Expert in fleet optimization and technical management with a track record of operational excellence.',
+      name: 'Gauri Shankar',
+      position: 'Director',
+      department: 'Corporate Management',
+      experience: '10+ years',
+      expertise: 'Business Operations, Client Relations & Maritime Administration',
+      bio: 'Overseeing organizational growth, client coordination, and operational efficiency across diverse maritime management functions.',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
     },
     {
-      name: 'Captain Vikram Desai',
-      position: 'Head of Crew Management',
-      department: 'Crew Management',
-      experience: '28+ years',
-      expertise: 'Seafarer Recruitment, Training & Development',
-      bio: 'Dedicated to crew welfare and professional development with global recruitment expertise.',
+      name: 'Captain Sailesh Kumar',
+      position: 'Chief Operations Officer',
+      department: 'Operations & Logistics',
+      experience: '15+ years',
+      expertise: 'Fleet Operations, Maritime Logistics & Vessel Coordination',
+      bio: 'Managing operational logistics and vessel coordination with hands-on maritime expertise across domestic and international operations.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
     },
     {
-      name: 'Anjali Kapoor',
-      position: 'Chief Financial Officer',
-      department: 'Finance',
+      name: 'Varun Kumar',
+      position: 'Crew Manager',
+      department: 'Crew Management',
       experience: '20+ years',
-      expertise: 'Maritime Finance, Risk Management',
-      bio: 'Financial strategist specializing in maritime investments and operational cost optimization.',
+      expertise: 'Crew Operations, Seafarer Deployment & Workforce Coordination',
+      bio: 'Specialized in crew planning, seafarer coordination, and maintaining efficient workforce operations for global maritime assignments.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
     },
     {
-      name: 'Chief Engineer Amit Patel',
-      position: 'Head of Technical Services',
-      department: 'Technical',
-      experience: '32+ years',
-      expertise: 'Marine Engineering, Dry-docking, Inspections',
-      bio: 'Technical expert with deep knowledge of vessel systems and maintenance protocols.',
+      name: 'Ravi Shankar Kumar',
+      position: 'Founder',
+      department: 'Founding Leadership',
+      experience: '25+ years',
+      expertise: 'Maritime Leadership, Fleet Operations & Industry Development',
+      bio: 'Veteran maritime professional with decades of experience in building operational excellence and long-term shipping industry relationships.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
     },
-    {
-      name: 'Sarah D\'Souza',
-      position: 'Head of Compliance & Safety',
-      department: 'Compliance',
-      experience: '22+ years',
-      expertise: 'Maritime Law, ISM/ISPS Compliance',
-      bio: 'Legal and compliance specialist ensuring adherence to international maritime regulations.',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
-    },
+    // {
+    //   name: 'Sarah D\'Souza',
+    //   position: 'Head of Compliance & Safety',
+    //   department: 'Compliance',
+    //   experience: '22+ years',
+    //   expertise: 'Maritime Law, ISM/ISPS Compliance',
+    //   bio: 'Legal and compliance specialist ensuring adherence to international maritime regulations.',
+    //   image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
+    // },
   ];
 
   return (
@@ -87,7 +87,7 @@ export function LeadershipTeam() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {team.map((member, index) => (
               <motion.div
                 key={index}
@@ -95,7 +95,7 @@ export function LeadershipTeam() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group relative overflow-hidden bg-[#F8F7F4] cursor-pointer"
+                className="group relative overflow-hidden bg-[#F8F7F4] cursor-pointer w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-sm md:max-w-none"
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
@@ -119,7 +119,7 @@ export function LeadershipTeam() {
                       <p className="text-sm leading-relaxed mt-4">{member.bio}</p>
                       <div className="flex gap-4 mt-6">
                         <button className="p-2 bg-white/10 hover:bg-white/20 transition-colors">
-                          <Linkedin size={20} />
+                          <Phone size={20} />
                         </button>
                         <button className="p-2 bg-white/10 hover:bg-white/20 transition-colors">
                           <Mail size={20} />

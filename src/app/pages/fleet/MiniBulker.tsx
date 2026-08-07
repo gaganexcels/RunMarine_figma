@@ -51,7 +51,7 @@ const galleryImages = [
 ];
 
 const relatedVessels = [
-  { name: 'Handymax', slug: 'handymax', dwt: '40,000 - 60,000 DWT' },
+  { name: 'General Cargo', slug: 'general-cargo', dwt: '5,000 - 30,000 DWT' },
   { name: 'Ultramax', slug: 'ultramax', dwt: '60,000 - 65,000 DWT' },
   { name: 'Panamax', slug: 'panamax', dwt: '60,000 - 80,000 DWT' },
 ];

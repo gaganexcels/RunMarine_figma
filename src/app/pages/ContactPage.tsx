@@ -132,39 +132,47 @@ export function ContactPage() {
                 </h3>
 
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4 group cursor-pointer" onClick={() => handleCopy('123 Maritime Boulevard, Mumbai, India 400001', 'Address')}>
+                  <div className="flex items-start gap-4 group cursor-pointer" onClick={() => handleCopy('Office Number 304, Plot 22 - 26, Sector 24, Krishna Govind Tower, Vashi, Navi Mumbai', 'Address')}>
                     <div className="p-3 bg-[#F8F7F4] group-hover:bg-[#0B2545] transition-colors">
                       {copiedItem === 'Address' ? <Check size={24} className="text-white" /> : <MapPin size={24} className="text-[#0B2545] group-hover:text-white transition-colors" />}
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#1A1A1A] mb-1">Address</h4>
                       <p className="text-[#6B7280]">
-                        123 Maritime Boulevard
+                        Office Number 304, Plot 22 - 26, Sector 24
                         <br />
-                        Mumbai, India 400001
+                        Krishna Govind Tower, Vashi, Navi Mumbai
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 group cursor-pointer" onClick={() => handleCopy('+91 22 1234 5678', 'Phone')}>
+                  <div className="flex items-start gap-4 group cursor-pointer" onClick={() => handleCopy('+91 99582 16002, +91 80803 43416', 'Phone')}>
                     <div className="p-3 bg-[#F8F7F4] group-hover:bg-[#0B2545] transition-colors">
                       {copiedItem === 'Phone' ? <Check size={24} className="text-white" /> : <Phone size={24} className="text-[#0B2545] group-hover:text-white transition-colors" />}
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#1A1A1A] mb-1">Phone</h4>
-                      <p className="text-[#6B7280]">+91 22 1234 5678</p>
-                      <p className="text-[#6B7280]">+91 22 8765 4321</p>
+                      <p className="text-[#6B7280]">
+                        <a href="tel:+919958216002" className="hover:text-[#0B2545] transition-colors font-medium">+91 99582 16002</a>
+                      </p>
+                      <p className="text-[#6B7280]">
+                        <a href="tel:+918080343416" className="hover:text-[#0B2545] transition-colors font-medium">+91 80803 43416</a>
+                      </p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 group cursor-pointer" onClick={() => handleCopy('info@runmarine.com', 'Email')}>
+                  <div className="flex items-start gap-4 group cursor-pointer" onClick={() => handleCopy('crewing@runmarine.in, operations@runmarine.in', 'Email')}>
                     <div className="p-3 bg-[#F8F7F4] group-hover:bg-[#0B2545] transition-colors">
                       {copiedItem === 'Email' ? <Check size={24} className="text-white" /> : <Mail size={24} className="text-[#0B2545] group-hover:text-white transition-colors" />}
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#1A1A1A] mb-1">Email</h4>
-                      <p className="text-[#6B7280]">info@runmarine.com</p>
-                      <p className="text-[#6B7280]">support@runmarine.com</p>
+                      <p className="text-[#6B7280]">
+                        <a href="mailto:crewing@runmarine.in" className="hover:text-[#0B2545] transition-colors font-medium">crewing@runmarine.in</a>
+                      </p>
+                      <p className="text-[#6B7280]">
+                        <a href="mailto:operations@runmarine.in" className="hover:text-[#0B2545] transition-colors font-medium">operations@runmarine.in</a>
+                      </p>
                     </div>
                   </div>
 
@@ -187,7 +195,7 @@ export function ContactPage() {
                   Get instant support through WhatsApp for urgent inquiries
                 </p>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919958216002"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white hover:bg-[#20BA5A] transition-colors font-semibold"
@@ -250,7 +258,7 @@ export function ContactPage() {
             }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.8491837266864!2d72.82522831490168!3d18.993564087141743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce7e0d0c5b5f%3A0x4c7f0b0f0b0f0b0f!2sMumbai%20Port%20Trust!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?q=Krishna%20Govind%20Tower,%20Sector%2024,%20Vashi,%20Navi%20Mumbai&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -270,7 +278,7 @@ export function ContactPage() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href="https://www.google.com/maps/dir/?api=1&destination=18.993564,72.827407"
+              href="https://www.google.com/maps/dir/?api=1&destination=Krishna+Govind+Tower,+Sector+24,+Vashi,+Navi+Mumbai"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -295,7 +303,7 @@ export function ContactPage() {
             </a>
 
             <a
-              href="https://maps.google.com/?q=18.993564,72.827407"
+              href="https://maps.google.com/?q=Krishna+Govind+Tower,+Sector+24,+Vashi,+Navi+Mumbai"
               target="_blank"
               rel="noopener noreferrer"
               style={{

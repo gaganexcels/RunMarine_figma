@@ -53,7 +53,7 @@ const galleryImages = [
 const relatedVessels = [
   { name: 'Kamsarmax', slug: 'kamsarmax', dwt: '82,000 - 87,000 DWT' },
   { name: 'Post-Panamax', slug: 'post-panamax', dwt: '90,000 - 110,000 DWT' },
-  { name: 'Handymax', slug: 'handymax', dwt: '40,000 - 60,000 DWT' },
+  { name: 'Ultramax', slug: 'ultramax', dwt: '60,000 - 65,000 DWT' },
 ];
 
 export function Panamax() {

@@ -4,65 +4,65 @@ import { PageHero } from '../../components/PageHero';
 import { Anchor, Gauge, Ship, Globe, ArrowRight } from 'lucide-react';
 
 const specifications = [
-  { label: 'Deadweight Tonnage', value: '200,000 - 400,000 DWT' },
-  { label: 'Length Overall', value: '320 - 360 meters' },
-  { label: 'Beam', value: '55 - 65 meters' },
-  { label: 'Draft', value: '20 - 23 meters' },
-  { label: 'Cargo Hold Capacity', value: '200,000 - 250,000 m³' },
-  { label: 'Speed (Service)', value: '14 - 15 knots' },
+  { label: 'Deadweight Tonnage', value: '5,000 - 30,000 DWT' },
+  { label: 'Length Overall', value: '100 - 180 meters' },
+  { label: 'Beam', value: '16 - 28 meters' },
+  { label: 'Draft', value: '6 - 10.5 meters' },
+  { label: 'Cargo Hold Capacity', value: '7,000 - 38,000 m³' },
+  { label: 'Speed (Service)', value: '12 - 14 knots' },
 ];
 
 const capabilities = [
   {
     icon: Ship,
-    title: 'Dedicated Ore Transport',
-    description: 'Specifically engineered for transporting massive quantities of iron ore and mineral concentrates between continents.',
+    title: 'Multi-Purpose Carriage',
+    description: 'Equipped to transport a diverse array of goods ranging from steel rolls, pipes, heavy machinery, and paper reels to timber and packed containers.',
   },
   {
     icon: Globe,
-    title: 'Ultra-Long Haul Routes',
-    description: 'Optimized for major mining export routes from Brazil, Australia, and West Africa to steel-producing nations.',
+    title: 'Flexible Route Access',
+    description: 'Perfectly scaled to navigate shallow-draft rivers, regional canals, and smaller secondary ports inaccessible to massive ocean-going giants.',
   },
   {
     icon: Gauge,
-    title: 'Maximum Economy of Scale',
-    description: 'The lowest per-ton transport costs in the industry, making mineral exports economically viable across vast distances.',
+    title: 'Self-Sustained Gear',
+    description: 'Outfitted with heavy-duty on-board deck cranes, allowing independent loading and unloading operations even at unequipped harbors.',
   },
   {
     icon: Anchor,
-    title: 'Specialized Infrastructure',
-    description: 'Requires dedicated deep-water terminals with specialized loading and discharge systems for efficient operations.',
+    title: 'Versatile Stowage',
+    description: 'Features adjustable tween-decks and box-shaped holds, meticulously designed to maximize spatial usage and protect delicate project cargo.',
   },
 ];
 
 const galleryImages = [
   {
-    url: 'https://images.unsplash.com/photo-1585713181935-d5f622cc2415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'VLOC at sea',
+    url: 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'General Cargo vessel at coastal transit',
   },
   {
-    url: 'https://images.unsplash.com/photo-1751970046974-6d5a27f23ce1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Massive cargo capacity',
+    url: 'https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Dynamic sea voyage cargo logistics',
   },
   {
-    url: 'https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    caption: 'Ocean operations',
+    url: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    caption: 'Loading operations with heavy ship crane',
   },
 ];
 
 const relatedVessels = [
-  { name: 'Capesize', slug: 'capesize', dwt: '150,000 - 400,000 DWT' },
-  { name: 'Post-Panamax', slug: 'post-panamax', dwt: '90,000 - 110,000 DWT' },
-  { name: 'Kamsarmax', slug: 'kamsarmax', dwt: '82,000 - 87,000 DWT' },
+  { name: 'Mini Bulker', slug: 'mini-bulker', dwt: '10,000 - 25,000 DWT' },
+  { name: 'Ultramax', slug: 'ultramax', dwt: '60,000 - 65,000 DWT' },
+  { name: 'Panamax', slug: 'panamax', dwt: '60,000 - 80,000 DWT' },
 ];
 
-export function VLOC() {
+export function GeneralCargo() {
   return (
     <div className="min-h-screen bg-[#F8F7F4]">
       <PageHero
-        title="VLOC"
-        subtitle="Very Large Ore Carriers. Unmatched capacity for bulk mineral transport across continents."
-        imageUrl="https://images.unsplash.com/photo-1585713181935-d5f622cc2415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+        title="General Cargo"
+        subtitle="The ultimate multi-purpose maritime workhorse. Engineered with independent gear to handle specialized commodities and reach restricted ports."
+        imageUrl="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
         height="large"
       />
 
@@ -80,14 +80,12 @@ export function VLOC() {
               className="text-4xl md:text-5xl font-bold text-[#0B2545] mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              The Ultimate Ore Carriers
+              Unparalleled Versatility
             </h2>
             <p className="text-lg text-[#6B7280] leading-relaxed">
-              Very Large Ore Carriers (VLOCs) represent the apex of specialized bulk carrier design.
-              These massive vessels are purpose-built for one mission: transporting enormous quantities
-              of iron ore and mineral concentrates from remote mining regions to industrial centers
-              worldwide. Their exceptional scale delivers unrivaled economic efficiency for long-distance
-              mineral transport.
+              Our General Cargo and multi-purpose fleet provides tailored solutions for non-standard shipments, complex 
+              logistical structures, and project cargo. With adjustable cargo layouts and self-sustaining crane gear, 
+              these vessels effortlessly service niche harbors and localized markets that lack industrial port facilities.
             </p>
           </motion.div>
 
@@ -173,27 +171,25 @@ export function VLOC() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Specialized Fleet Expertise
+              Precision for Complex Voyages
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
-              Operating VLOCs demands extraordinary expertise in vessel management, cargo handling, and
-              global logistics coordination. Our teams bring decades of specialized experience in managing
-              these massive vessels, ensuring seamless operations from remote loading terminals to
-              destination ports. Every voyage is planned with meticulous attention to efficiency, safety,
-              and environmental stewardship.
+              Multi-purpose general cargo operations require an exceptional level of stowage planning and sea-fastening 
+              expertise. Our teams utilize state-of-the-art 3D layout software to model loading stresses, ensure safe centers 
+              of gravity, and guarantee that heavy cargo reaches its destination in absolute pristine condition.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-12">
               <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">400K</div>
-                <div className="text-white/80">DWT Maximum</div>
-              </div>
-              <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-[#B8860B] mb-2">20M+</div>
-                <div className="text-white/80">Tons Annually</div>
-              </div>
-              <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
                 <div className="text-3xl font-bold text-[#B8860B] mb-2">100%</div>
-                <div className="text-white/80">Cargo Integrity</div>
+                <div className="text-white/80">Self-Sufficient Loading</div>
+              </div>
+              <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">350+</div>
+                <div className="text-white/80">Unique Harbors Serviced</div>
+              </div>
+              <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+                <div className="text-3xl font-bold text-[#B8860B] mb-2">Zero</div>
+                <div className="text-white/80">Stowage Damage Events</div>
               </div>
             </div>
           </motion.div>
@@ -296,11 +292,11 @@ export function VLOC() {
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Charter a VLOC
+              Charter a General Cargo Vessel
             </h2>
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              For large-scale mineral transport, our VLOC fleet delivers unmatched efficiency.
-              Contact our team to discuss your ore shipping requirements.
+              Unlock unmatched transport versatility for non-standard, industrial, or project commodities. 
+              Get in touch with our operations team to secure your custom shipping plan today.
             </p>
             <Link
               to="/contact"

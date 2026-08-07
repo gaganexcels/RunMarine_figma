@@ -20,13 +20,17 @@ import RecruitmentPolicy from './pages/training/RecruitmentPolicy';
 import EnvironmentPolicy from './pages/training/EnvironmentPolicy';
 import SafetyPolicy from './pages/training/SafetyPolicy';
 import { FleetOverview } from './pages/fleet/FleetOverview';
-import { Handymax } from './pages/fleet/Handymax';
+import { BulkCarrier } from './pages/fleet/BulkCarrier';
+import { GeneralCargo } from './pages/fleet/GeneralCargo';
 import { Panamax } from './pages/fleet/Panamax';
 import { Kamsarmax } from './pages/fleet/Kamsarmax';
 import { Capesize } from './pages/fleet/Capesize';
 import { Ultramax } from './pages/fleet/Ultramax';
 import { PostPanamax } from './pages/fleet/PostPanamax';
-import { VLOC } from './pages/fleet/VLOC';
+import { Aframax } from './pages/fleet/Aframax';
+import { Suezmax } from './pages/fleet/Suezmax';
+import { MRTanker } from './pages/fleet/MRTanker';
+import { ContainerVessel } from './pages/fleet/ContainerVessel';
 import { MiniBulker } from './pages/fleet/MiniBulker';
 import { ContactPage } from './pages/ContactPage';
 import { NotFound } from './pages/NotFound';
@@ -64,13 +68,17 @@ export const router = createHashRouter([
 
       // Fleet routes
       { path: 'fleet', Component: FleetOverview },
-      { path: 'fleet/handymax', Component: Handymax },
+      { path: 'fleet/bulk-carrier', Component: BulkCarrier },
+      { path: 'fleet/general-cargo', Component: GeneralCargo },
       { path: 'fleet/panamax', Component: Panamax },
       { path: 'fleet/kamsarmax', Component: Kamsarmax },
       { path: 'fleet/capesize', Component: Capesize },
       { path: 'fleet/ultramax', Component: Ultramax },
       { path: 'fleet/post-panamax', Component: PostPanamax },
-      { path: 'fleet/vloc', Component: VLOC },
+      { path: 'fleet/aframax', Component: Aframax },
+      { path: 'fleet/suezmax', Component: Suezmax },
+      { path: 'fleet/mr-tanker', Component: MRTanker },
+      { path: 'fleet/container-vessel', Component: ContainerVessel },
       { path: 'fleet/mini-bulker', Component: MiniBulker },
 
       // Contact route

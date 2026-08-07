@@ -74,11 +74,12 @@ export function Stats() {
   return (
     <section className="py-12 bg-white border-b border-[#E5E5E5]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-[#E5E5E5]">
-          <StatCard value="15+" label="Years of Excellence" delay={0} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 divide-y sm:divide-y-0 lg:divide-x divide-[#E5E5E5]">
+          <StatCard value="75+" label="Combined Years of Experience" delay={0} />
           <StatCard value="10000+" label="Crew Managed" delay={0.1} />
           <StatCard value="12+" label="Countries Served" delay={0.2} />
-          <StatCard value="500+" label="Vessels Managed" delay={0.3} />
+          <StatCard value="50+" label="Vessels Managed" delay={0.3} />
+          <StatCard value="10+" label="Years of Excellence" delay={0.4} />
         </div>
       </div>
     </section>

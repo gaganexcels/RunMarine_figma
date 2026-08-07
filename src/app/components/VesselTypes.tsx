@@ -78,10 +78,16 @@ export function VesselTypes() {
 
   const vessels = [
     {
-      name: 'Handymax',
-      slug: 'handymax',
-      description: '40,000-60,000 DWT • Versatile bulk carriers',
-      image: 'https://images.unsplash.com/photo-1645865406062-872af9faa81a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+      name: 'Bulk Carrier',
+      slug: 'bulk-carrier',
+      description: '30,000-200,000 DWT • Unpackaged dry cargo',
+      image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    },
+    {
+      name: 'General Cargo',
+      slug: 'general-cargo',
+      description: 'Multi-purpose • Onboard cranes (geared)',
+      image: 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
     },
     {
       name: 'Panamax',
@@ -114,10 +120,28 @@ export function VesselTypes() {
       image: 'https://images.unsplash.com/photo-1759171249029-ce1bee69979e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
     },
     {
-      name: 'VLOC',
-      slug: 'vloc',
-      description: '200,000-400,000 DWT • Very large ore carriers',
-      image: 'https://images.unsplash.com/photo-1676978024862-5039d9f23736?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+      name: 'Aframax',
+      slug: 'aframax',
+      description: '80,000-120,000 DWT • Crude oil tankers',
+      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    },
+    {
+      name: 'Suezmax',
+      slug: 'suezmax',
+      description: '120,000-160,000 DWT • Suez Canal optimized',
+      image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    },
+    {
+      name: 'MR Tanker',
+      slug: 'mr-tanker',
+      description: '35,000-55,000 DWT • Refined product tankers',
+      image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    },
+    {
+      name: 'Container Vessel',
+      slug: 'container-vessel',
+      description: '1,500-15,000 TEU • High-speed cargo liners',
+      image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
     },
     {
       name: 'Mini Bulker',
