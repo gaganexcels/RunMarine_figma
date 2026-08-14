@@ -222,14 +222,15 @@ export function Contact() {
             className="space-y-8"
           >
             <div className="h-64 border border-[#E5E5E5] overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571131756!2d72.71637183593774!3d19.08219783960437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1647856789123!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0, filter: 'grayscale(100%)' }}
-                allowFullScreen
-                loading="lazy"
-              />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.6361157198063!2d73.00914081119856!3d19.069352137092952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1469f2fffff%3A0x2f841cb99b39a2ef!2sground%20floor%2C%20Krishna%20Govinda%20Tower%2C%20Sector%2024%2C%20Vashi%2C%20Navi%20Mumbai%2C%20Maharashtra%20400703!5e0!3m2!1sen!2sin!4v1786709153091!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+/>
             </div>
 
             <div className="space-y-6">
@@ -240,9 +241,9 @@ export function Contact() {
                 <div className="flex-1">
                   <h4 className="text-[#1A1A1A] font-semibold mb-1">Office Address</h4>
                   <p className="text-[#6B7280]">
-                    Marine Drive, Nariman Point
+                  Office Number 304, Plot 22 - 26, Sector 24, Krishna Govind Tower,
                     <br />
-                    Mumbai, Maharashtra 400021, India
+                    Vashi, Navi Mumbai, 400703, Maharashtra, India
                   </p>
                 </div>
               </div>
@@ -254,10 +255,10 @@ export function Contact() {
                 <div className="flex-1">
                   <h4 className="text-[#1A1A1A] font-semibold mb-1">Email</h4>
                   <button
-                    onClick={() => copyToClipboard('contact@runmarine.in', 'email')}
+                    onClick={() => copyToClipboard('runmarine507@gmail.com', 'email')}
                     className="text-[#6B7280] hover:text-[#0B2545] transition-colors flex items-center gap-2"
                   >
-                    contact@runmarine.in
+                    runmarine507@gmail.com
                     {copiedField === 'email' ? (
                       <Check size={16} className="text-green-600" />
                     ) : (
@@ -274,10 +275,10 @@ export function Contact() {
                 <div className="flex-1">
                   <h4 className="text-[#1A1A1A] font-semibold mb-2">Phone</h4>
                   <button
-                    onClick={() => copyToClipboard('+91 22 1234 5678', 'phone1')}
+                    onClick={() => copyToClipboard('+91 80803 43416', 'phone1')}
                     className="text-[#6B7280] hover:text-[#0B2545] transition-colors flex items-center gap-2 mb-2"
                   >
-                    +91 22 1234 5678
+                    +91 80803 43416
                     {copiedField === 'phone1' ? (
                       <Check size={16} className="text-green-600" />
                     ) : (
@@ -285,10 +286,10 @@ export function Contact() {
                     )}
                   </button>
                   <button
-                    onClick={() => copyToClipboard('+91 22 8765 4321', 'phone2')}
+                    onClick={() => copyToClipboard('+91 99582 16002', 'phone2')}
                     className="text-[#6B7280] hover:text-[#0B2545] transition-colors flex items-center gap-2"
                   >
-                    +91 22 8765 4321
+                    +91 99582 16002'
                     {copiedField === 'phone2' ? (
                       <Check size={16} className="text-green-600" />
                     ) : (

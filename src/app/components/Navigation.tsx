@@ -119,12 +119,11 @@ export function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <span
-              className="text-2xl font-bold tracking-tight text-[#0a1e3c]"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              RunMarine
-            </span>
+          <img
+          src="/image.png" // Relative path to the image in the root directory
+          alt="RunMarine Logo"
+          className="h-16 w-16"
+          />
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
@@ -266,12 +265,11 @@ export function Navigation() {
           >
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                <span
-                  className="text-[#0a1e3c] text-2xl font-bold"
-                  style={{ fontFamily: "'Playfair Display', serif" }}
-                >
-                  RunMarine
-                </span>
+              <img
+              src="/image.png" // Relative path to the image in the root directory
+              alt="RunMarine Logo"
+              className="h-10 w-auto"
+              />
                 <button onClick={() => setIsMenuOpen(false)} className="text-[#0a1e3c] p-2">
                   <X size={24} />
                 </button>
